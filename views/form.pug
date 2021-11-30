@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  form(action="/new" method = "POST")
+    label(for="user") Name: 
+    input(type="text", name="user", required)
+    br
+    label(for="text") Message: 
+    input(type="text", name="text", required) 
+    br
+    input.btn(type="submit")

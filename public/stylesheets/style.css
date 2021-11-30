@@ -1,8 +1,85 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  top: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family: monospace;
+  background-color: darkslategrey;
+  color: whitesmoke;
 }
+
+h1,
+button,
+h2,
+.message-container,
+form,
+.btn {
+  border: 2px solid whitesmoke;
+  margin: 1rem auto;
+  height: 3rem;
+}
+
+h1,
+h2 {
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+}
+
+h1 {
+  width: 90vw;
+}
+
+button,
+.btn {
+  display: block;
+  background-color: inherit;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+h2 {
+  width: 50vw;
+}
+
+.message-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+p {
+  display: block;
+  min-height: 2rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+.message {
+  background-color: whitesmoke;
+  color: darkslategrey;
+  font-weight: 600;
+}
+
+.user {
+  text-align: end;
+}
+
+form {
+  height: 30vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+input {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
